@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // Primary Button
-const ButtonPrimary = ({ href, target='_self', label, icon, classes}) => {
+const ButtonPrimary = ({ href, target='_self', label, icon, classes, handle}) => {
   if (href) {
     return (
         <a href={href} target={target} className={"btn btn-primary " + classes}>
@@ -15,7 +15,7 @@ const ButtonPrimary = ({ href, target='_self', label, icon, classes}) => {
     )
   } else {
     return (
-        <button className={'btn btn-primary ' + classes}>
+        <button className={'btn btn-primary ' + classes} onClick={handle}>
             {label}
             {icon 
                 ? (<span className='material-symbols-rounded' aria-hidden="true">{icon}</span>)
@@ -32,6 +32,7 @@ ButtonPrimary.propTypes = {
     target: PropTypes.string,
     icon: PropTypes.string,
     classes: PropTypes.string,
+    handle: PropTypes.func
 }
 
 

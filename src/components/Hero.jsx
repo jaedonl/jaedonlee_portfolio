@@ -2,6 +2,17 @@ import React from 'react'
 import { ButtonPrimary, ButtonOutline } from './\bButton'
 
 const Hero = () => {
+
+    const handleDownloadFile = () => {
+        const pdfUrl = "/assets/Jaedon_lee_resume_01222025.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "jaedon_lee_resume_01222025.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return (
         <section id='home' className='pt-28 lg:pt-30'>
             <div className='container lg:grid lg:grid-cols-2 items-center lg:gap-10'>
@@ -29,6 +40,7 @@ const Hero = () => {
                         <ButtonPrimary 
                             label="Download CV"
                             icon="download"
+                            handle={handleDownloadFile}
                         />
 
                         <ButtonOutline 

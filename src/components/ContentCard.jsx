@@ -10,17 +10,6 @@ const ContentCard = ({title, author, cover, video, classes}) => {
             <p className='mt-1 line-clamp-1 text-sm text-zinc-400'>{author}</p>
         </a>
     </li>
-    
-    // <li className='bg-zinc-800 p-5 rounded-xl min-w-[320px] flex flex-col lg:min-w-[420px]'>
-    //     <a href={video} target='_blank'>
-    //         <figure className='rounded-lg mb-4'>
-    //             <img src={cover} alt={title} loading='lazy' />
-    //         </figure>
-
-    //         <h3 className='mt-2 line-clamp-1 text-base font-semibold text-white xs:text-xl'>{title}</h3>
-    //         <p className='mt-1 line-clamp-1 text-sm text-zinc-400'>{author}</p>
-    //     </a>
-    // </li>
   )
 }
 
