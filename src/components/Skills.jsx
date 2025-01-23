@@ -57,22 +57,32 @@ const skillItem = [
         label: 'Shopify',
         desc: 'E-commerce Platform'
     },    
+    {
+        imgSrc: '/assets/techstacks/adobe-premiere.svg',
+        label: 'Adobe Prepiere Pro',
+        desc: 'Video Editing'
+    },
+    {
+        imgSrc: '/assets/techstacks/youtube.svg',
+        label: 'YouTube',
+        desc: 'Video Platform'
+    },
 ];
 
 const Skills = () => {
   return (
     <section className='section'>
         <div className='container'>
-            <h2 className='headline-2'>
+            <h2 className='headline-2 reveal-up'>
                 Tech Stacks
             </h2>
-            <p className='text-zinc-400 mt-3 mb-8 max-w-[50ch]'>
+            <p className='text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up'>
                 Check out my tech stacks I use to build websites & application
             </p>
 
             <div className='grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]'>
                 {skillItem.map((item) => (
-                    <SkillCard key={item.label} imgSrc={item.imgSrc} label={item.label} desc={item.desc} classes={item.classes} />
+                    <SkillCard key={item.label} imgSrc={item.imgSrc} label={item.label} desc={item.desc} classes="reveal-up" />
                 ))}
             </div>
         </div>

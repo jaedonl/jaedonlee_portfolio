@@ -15,7 +15,7 @@ const About = () => {
   return (
     <section id='about' className='section'>
         <div className='container'>
-            <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12'>
+            <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up'>
                 <h2 className='headline-2 mt-5 mb-8 lg:mb-10'>Hi, I'm Jaedon Lee.</h2>
                 <p className='text-zinc-300 mb-4 md:mb-8 md:text-xl'>
                     Software engineer (Frontend) with 3-4 years of experience building user-friendly web applications using React.js, Next.js, Typescript and Node.js. Developed a web application and e-commerce projects, focusing on creating interactive and efficient user interfaces. Proficient in responsive design, modern JavaScript libraries, and collaborating with teams to deliver high-quality solutions.

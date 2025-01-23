@@ -26,7 +26,7 @@ const ButtonPrimary = ({ href, target='_self', label, icon, classes}) => {
   }
 }
 
-ButtonPrimary.PropTypes = {
+ButtonPrimary.propTypes = {
     label: PropTypes.string.isRequired,
     href: PropTypes.string,
     target: PropTypes.string,
@@ -59,7 +59,7 @@ const ButtonOutline = ({ href, target='_self', label, icon, classes}) => {
     }
   }
   
-  ButtonOutline.PropTypes = {
+  ButtonOutline.propTypes = {
       label: PropTypes.string.isRequired,
       href: PropTypes.string,
       target: PropTypes.string,

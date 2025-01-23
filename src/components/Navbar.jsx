@@ -19,10 +19,10 @@ const Navbar = ({navOpen}) => {
       activeBox.current.style.width = lastActiveLink.current.offsetWidth + 'px';
       activeBox.current.style.height = lastActiveLink.current.offsetHeight + 'px';
     }
-    const debouncedResize = debounce(initActiveBox, 200);
+    const debouncedResize = debounce(initActiveBox, 100);
 
     useEffect(debouncedResize, [])
-    window.addEventListener('resize', initActiveBox)
+    window.addEventListener('resize', debouncedResize)
 
     const activeCurrentLink = (event) => {
       lastActiveLink.current?.classList.remove('active');
@@ -48,13 +48,13 @@ const Navbar = ({navOpen}) => {
           className: 'nav-link'
         },
         {
-          label: 'Work',
+          label: 'Works',
           link: '#work',
           className: 'nav-link'
         },
         {
-          label: 'Reviews',
-          link: '#reviews',
+          label: 'YT Videos',
+          link: '#ytVideos',
           className: 'nav-link'
         },
         {
@@ -77,7 +77,7 @@ const Navbar = ({navOpen}) => {
     )
 }
 
-Navbar.PropTypes = {
+Navbar.propTypes = {
   navOpen: PropTypes.bool.isRequired
 }
 
