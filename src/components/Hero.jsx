@@ -4,10 +4,10 @@ import { ButtonPrimary, ButtonOutline } from './\bButton'
 const Hero = () => {
 
     const handleDownloadFile = () => {
-        const pdfUrl = "/assets/Jaedon_lee_resume_01222025.pdf";
+        const pdfUrl = "/assets/jaedon_lee_resume_02122025.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "jaedon_lee_resume_01222025.pdf";
+        link.download = "jaedon_lee_resume_02122025.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

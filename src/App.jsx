@@ -9,7 +9,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Works from './components/Works'
-import OtherActivity from './components/OtherActivity'
+// import OtherActivity from './components/OtherActivity'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -43,7 +43,7 @@ function App() {
         <About />
         <Skills />
         <Works />
-        <OtherActivity />
+        {/* <OtherActivity /> */}
         <Contact />
         <Footer />
       </main>

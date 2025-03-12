@@ -52,11 +52,11 @@ const Navbar = ({navOpen}) => {
           link: '#work',
           className: 'nav-link'
         },
-        {
-          label: 'YT Videos',
-          link: '#ytVideos',
-          className: 'nav-link'
-        },
+        // {
+        //   label: 'YT Videos',
+        //   link: '#ytVideos',
+        //   className: 'nav-link'
+        // },
         {
           label: 'Contact',
           link: '#contact',

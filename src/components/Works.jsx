@@ -3,6 +3,20 @@ import PortfolioCard from './PortfolioCard';
 
 const works = [
     {
+      imgSrc: '/assets/works/forlocalonly.png',
+      // imgSet: ['/assets/works/videoapp-1.png', '/assets/works/videoapp-2.png', '/assets/works/videoapp-2.png'],
+      title: 'Next.js + Sanity.io CMS blog app',
+      tags: ['NextJS 15', 'TypeScript', 'Sanity.io', "TailwindCSS"],
+      projectLink: null
+    },
+    {
+      imgSrc: '/assets/works/react_native_app.webp',
+      // imgSet: ['/assets/works/videoapp-1.png', '/assets/works/videoapp-2.png', '/assets/works/videoapp-2.png'],
+      title: 'React Native (Expo) mobile app',
+      tags: ['React Native', 'TypeScript', 'Appwrite', "TailwindCSS"],
+      projectLink: null
+    },
+    {
       imgSrc: '/assets/works/videoapp-1.png',
       // imgSet: ['/assets/works/videoapp-1.png', '/assets/works/videoapp-2.png', '/assets/works/videoapp-2.png'],
       title: 'Fullstack video app',
