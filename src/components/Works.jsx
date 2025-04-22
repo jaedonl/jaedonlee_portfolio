@@ -3,11 +3,11 @@ import PortfolioCard from './PortfolioCard';
 
 const works = [
     {
-      imgSrc: '/assets/works/forlocalonly.png',
+      imgSrc: '/assets/works/foodandspot.png',
       // imgSet: ['/assets/works/videoapp-1.png', '/assets/works/videoapp-2.png', '/assets/works/videoapp-2.png'],
       title: 'Next.js + Sanity.io CMS blog app',
       tags: ['NextJS 15', 'TypeScript', 'Sanity.io', "TailwindCSS"],
-      projectLink: null
+      projectLink: 'https://www.foodandspot.com/'
     },
     {
       imgSrc: '/assets/works/react_native_app.webp',
